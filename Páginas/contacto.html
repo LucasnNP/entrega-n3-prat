@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header id="encabezado">
+      <h1>Lucas Nicolás Prat</h1>
+      <nav id="navbar">
+        <a href="../index.html" class="btn">Inicio</a>
+        <a href="./sobre-mi.html" class="btn">Sobre Mi</a>
+        <a href="./skills.html" class="btn">Skills</a>
+        <a href="./proyectos.html" class="btn">Proyectos</a>
+        <a href="./contacto.html" class="btn-selected">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <!--acá vá un formulario para contacto-->
+      <section id="contenedor-grande">
+        <h2>
+          Si te interesa que trabajemos juntos te invito a llenar el formulario
+        </h2>
+        <form action="/submit" method="post" id="form">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Juan Perez"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="ejemplo@gmail.com"
+          />
+
+          <label for="mensaje">Contame</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="contame"
+          ></textarea>
+          <button type="submit" class="adicional">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/lucas-nicol%C3%A1s-prat-33156883?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FwebchGUSf240oeIu9fosw%3D%3D"
+        target="_blank"
+        class="red-social"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/luunpr?igsh=bWpmdTN6NTByMWFw"
+        target="_blank"
+        class="red-social"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a
+        href="https://wa.me/542920356386?text=Hola!!20%Me20%gustó20%tu20%portfolio"
+        target="_blank"
+        class="red-social"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </footer>
+  </body>
+</html>
