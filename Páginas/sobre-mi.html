@@ -34,22 +34,61 @@
     <main class="main">
       <!--En la sección sobre Mi se contará un poco mi historia -->
       <section class="main__box-texts">
-        <div>
-          <h2>Sobre Mi</h2>
+        <div id="main__box-texts__sobre-mi">
+          <h2>Sobre mí</h2>
+
+          <!-- Parte visible -->
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            quaerat nihil hic odio necessitatibus aliquid quis. Molestiae
-            voluptatem quae ea repellat perferendis, tempore similique pariatur
-            est labore error nihil at quia dignissimos esse numquam possimus
-            inventore. Laudantium voluptatem officia ut voluptates fugit placeat
-            blanditiis facilis accusamus vitae, suscipit quisquam vero. Nihil
-            quod iusto, illum a dolorem iste, laudantium recusandae animi
-            voluptatem libero perferendis praesentium. Alias dolore magni
-            repellat blanditiis fugit nemo a, fugiat ipsa in consequuntur esse
-            provident hic commodi dolorem exercitationem consectetur unde
-            pariatur temporibus odit eaque qui? Vero dolore excepturi officiis
-            temporibus debitis et corporis at fugiat tenetur?
+            Mi nombre es Lucas Prat, soy estudiante de Desarrollo Web Fullstack
+            en Coderhouse. Me apasiona la tecnología y estoy dando mis primeros
+            pasos en el mundo del diseño y la programación web. Me encanta
+            aprender nuevas herramientas y estoy entusiasmado con los proyectos
+            que vendrán.
           </p>
+
+          <!-- Checkbox oculto -->
+          <input type="checkbox" id="main__box-texts__toggle-mas" />
+
+          <!-- Contenido oculto que se expande -->
+          <div class="main__box-texts__extra-content">
+            <p>
+              Desde muy chico me llamó la atención todo lo relacionado con la
+              tecnología; pasaba horas en la computadora 486 que tenía mi papá
+              en casa. Todavía no existía Windows, y había que escribir todos
+              los comandos en DOS.
+            </p>
+            <p>
+              Con el correr de los años me fui inclinando hacia la mecánica,
+              otra de mis pasiones. Me recibí de técnico en automotores y luego
+              inicié la carrera de Ingeniería Mecánica, de la cual me gradué y
+              en la que actualmente trabajo. Tuve la suerte de ingresar en la
+              industria química, donde hoy desempeño el puesto de Líder de
+              Mantenimiento (como Ingeniero de Confiabilidad), aportando mis
+              conocimientos y enfrentando desafíos constantemente.
+            </p>
+            <p>
+              Sin embargo, a medida que fui creciendo en esta carrera, me di
+              cuenta de que cuanto más avanzaba, más tiempo demandaba y menos
+              margen tenía para dedicarme a otras actividades que también
+              disfruto, como la música (toco la guitarra) y viajar.
+            </p>
+            <p>
+              Por eso decidí volver a uno de mis primeros intereses y comencé a
+              estudiar Desarrollo Web. Cada día descubro cosas nuevas, y este
+              primer proyecto, que es mi portfolio personal, me entusiasma y me
+              impulsa a seguir aprendiendo y creciendo en esta área.
+            </p>
+            <p>
+              Actualmente, me interesa participar en proyectos desafiantes que
+              me impulsen a seguir desarrollándome como Front-End Developer, por
+              lo que estoy abierto a nuevas oportunidades relacionadas con este
+              campo.
+            </p>
+          </div>
+          <label
+            for="main__box-texts__toggle-mas"
+            class="read-more-button"
+          ></label>
         </div>
       </section>
     </main>

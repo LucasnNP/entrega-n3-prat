@@ -101,6 +101,62 @@ footer {
   width: 50%;
   text-align: center;
 }
+/*configuración complementaria página sobre mí*/
+
+#main__box-texts__sobre-mi {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ocultar checkbox */
+#main__box-texts__toggle-mas {
+  display: none;
+}
+
+/* Ocultar contenido extra por defecto */
+.main__box-texts__extra-content {
+  display: none;
+  margin-top: 5px;
+}
+
+/* Mostrar contenido cuando el checkbox esté marcado */
+#main__box-texts__toggle-mas:checked + .main__box-texts__extra-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Estilo general del botón */
+.read-more-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Texto por defecto (cuando no está marcado) */
+.read-more-button::after {
+  content: "Leer más";
+}
+
+/* Texto cuando el checkbox está marcado */
+#main__box-texts__toggle-mas:checked
+  + .main__box-texts__extra-content
+  + .read-more-button::after {
+  content: "Leer menos";
+}
+
+/* Cambiar color al pasar el mouse */
+.read-more-button:hover {
+  background-color: #005fa3;
+}
 /*Esta es la configuración complementaria para la sección skills*/
 #skills {
   display: flex;
