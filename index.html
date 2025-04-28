@@ -18,23 +18,33 @@
   </head>
   <body>
     <!--esta es el header y en el se situará el título de la página sobre el margen izquierdo y un navbar-->
-    <header id="encabezado">
+    <header id="header">
       <h1>Lucas Nicolás Prat</h1>
-      <nav id="navbar">
-        <a href="./index.html" class="btn-selected">Inicio</a>
-        <a href="./Páginas/sobre-mi.html" class="btn">Sobre Mi</a>
-        <a href="./Páginas/skills.html" class="btn">Skills</a>
-        <a href="./Páginas/proyectos.html" class="btn">Proyectos</a>
-        <a href="./Páginas/contacto.html" class="btn">Contacto</a>
+      <nav id="header__navbar">
+        <a href="./index.html" class="header__navbar__btn-selected">Inicio</a>
+        <a href="./Páginas/sobre-mi.html" class="header__navbar__btn"
+          >Sobre Mi</a
+        >
+        <a href="./Páginas/skills.html" class="header__navbar__btn">Skills</a>
+        <a href="./Páginas/proyectos.html" class="header__navbar__btn"
+          >Proyectos</a
+        >
+        <a href="./Páginas/contacto.html" class="header__navbar__btn"
+          >Contacto</a
+        >
       </nav>
     </header>
 
     <!--la pantalla de inicio va a contener la foto con un mensaje de bienvenida separado en dos contenedores uno al lado del otro-->
-    <main class="principal">
-      <section id="img-home">
-        <img src="./Assets/selfie.png" alt="" id="imagen-lp" />
+    <main class="main">
+      <section id="main__box-img-home">
+        <img
+          src="./Assets/selfie.png"
+          alt="selfie"
+          id="main__box-img-home__imagen-lp"
+        />
       </section>
-      <section class="contenedor-textos">
+      <section class="main__box-texts">
         <div>
           <h2>Bienvenido</h2>
           <p>
@@ -54,19 +64,19 @@
       <a
         href="https://www.linkedin.com/in/lucas-nicol%C3%A1s-prat-33156883?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FwebchGUSf240oeIu9fosw%3D%3D"
         target="_blank"
-        class="red-social"
+        class="footer__social-network"
         ><i class="fa-brands fa-linkedin"></i
       ></a>
       <a
         href="https://www.instagram.com/luunpr?igsh=bWpmdTN6NTByMWFw"
         target="_blank"
-        class="red-social"
+        class="footer__social-network"
         ><i class="fa-brands fa-instagram"></i
       ></a>
       <a
         href="https://wa.me/542920356386?text=Hola!!20%Me20%gustó20%tu20%portfolio"
         target="_blank"
-        class="red-social"
+        class="footer__social-network"
         ><i class="fa-brands fa-whatsapp"></i
       ></a>
     </footer>

@@ -18,24 +18,26 @@
   </head>
 
   <body>
-    <header id="encabezado">
+    <header id="header">
       <h1>Lucas Nicolás Prat</h1>
-      <nav id="navbar">
-        <a href="../index.html" class="btn">Inicio</a>
-        <a href="./sobre-mi.html" class="btn">Sobre Mi</a>
-        <a href="./skills.html" class="btn">Skills</a>
-        <a href="./proyectos.html" class="btn">Proyectos</a>
-        <a href="./contacto.html" class="btn-selected">Contacto</a>
+      <nav id="header__navbar">
+        <a href="../index.html" class="header__navbar__btn">Inicio</a>
+        <a href="./sobre-mi.html" class="header__navbar__btn">Sobre Mi</a>
+        <a href="./skills.html" class="header__navbar__btn">Skills</a>
+        <a href="./proyectos.html" class="header__navbar__btn">Proyectos</a>
+        <a href="./contacto.html" class="header__navbar__btn-selected"
+          >Contacto</a
+        >
       </nav>
     </header>
 
-    <main class="principal">
+    <main class="main">
       <!--acá vá un formulario para contacto-->
-      <section id="contenedor-grande">
+      <section id="main__big-box">
         <h2>
           Si te interesa que trabajemos juntos te invito a llenar el formulario
         </h2>
-        <form action="/submit" method="post" id="form">
+        <form action="/submit" method="post" id="main__big-box__form">
           <label for="nombre">Nombre</label>
           <input
             type="text"
@@ -58,7 +60,7 @@
             id="mensaje"
             placeholder="contame"
           ></textarea>
-          <button type="submit" class="adicional">Enviar</button>
+          <button type="submit" class="main__big-box__btn-form">Enviar</button>
         </form>
       </section>
     </main>
