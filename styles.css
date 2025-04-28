@@ -50,6 +50,10 @@ p {
   text-align: justify;
   margin-bottom: 0.5rem;
 }
+.header__navbar__btn-selected:hover {
+  background-color: #005fa3;
+}
+
 .header__navbar__btn {
   color: steelblue;
   border: none;
@@ -57,6 +61,11 @@ p {
   border-radius: 0.5rem;
   text-decoration: none;
 }
+.header__navbar__btn:hover {
+  color: white;
+  background-color: #005fa3;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -132,10 +141,10 @@ footer {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #0077cc;
+  background-color: #769fcd;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
@@ -214,4 +223,7 @@ button {
   background-color: #769fcd;
   color: white;
   border: none;
+}
+.main__big-box__btn-form:hover {
+  background-color: #005fa3;
 }
