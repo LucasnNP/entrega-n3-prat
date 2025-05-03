@@ -19,7 +19,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 6rem;
+  height: 15vh;
   padding: 0.25rem;
   background-color: #f7fbfc;
   margin-bottom: 0.25rem;
@@ -37,14 +37,14 @@ p {
 
 #header__navbar {
   align-content: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .header__navbar__btn-selected {
   background-color: #769fcd;
   color: white;
   border: none;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
   text-decoration: none;
   text-align: justify;
@@ -57,7 +57,7 @@ p {
 .header__navbar__btn {
   color: steelblue;
   border: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.2rem;
   border-radius: 0.5rem;
   text-decoration: none;
 }
@@ -70,10 +70,21 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 75vh;
+  padding: 1.75rem;
   gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .main {
+    align-items: center;
+  }
+  .header__navbar__btn-selected {
+    padding: 0.5rem 0.5rem;
+  }
+  .header__navbar__btn {
+    padding: 0.5em 0.5rem;
+  }
 }
 span {
   font-weight: bold;
@@ -106,8 +117,8 @@ footer {
 .main__box-texts {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 50%;
+  align-items: start;
+  width: 75%;
   text-align: center;
 }
 /*configuración complementaria página sobre mí*/
@@ -213,7 +224,7 @@ footer {
 #main__big-box__form {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 340px;
 }
 
 input,
