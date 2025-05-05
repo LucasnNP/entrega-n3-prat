@@ -1,4 +1,4 @@
-/*En un principio se va a poner el color de fondo de la pag*/
+/*En un principio se resetea los valores por defecto*/
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +10,7 @@ html {
   font-size: 16px;
 }
 #body {
+  /*se usrá grid para el layout de las pages con una columna y tres rows*/
   font-family: "Josefin Sans", sans-serif;
   min-height: 100dvh;
   display: grid;
@@ -46,7 +47,6 @@ p {
   align-content: center;
   padding: 0.25rem;
 }
-
 .header__navbar__btn-selected {
   background-color: #769fcd;
   color: white;
@@ -60,7 +60,6 @@ p {
 .header__navbar__btn-selected:hover {
   background-color: #005fa3;
 }
-
 .header__navbar__btn {
   color: steelblue;
   border: none;
