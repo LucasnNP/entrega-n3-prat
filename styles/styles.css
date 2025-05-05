@@ -6,7 +6,7 @@
 }
 /*Lo que se configurará acá va a repercutir en todas las páginas*/
 html {
-  min-height: 100vh;
+  min-height: 100dvh;
   font-size: 16px;
 }
 #body {
