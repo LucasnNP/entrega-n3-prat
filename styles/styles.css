@@ -1,17 +1,25 @@
-/*En un principio se resetea los valores por defecto*/
+@charset "UTF-8";
+footer, .main, #header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/*Lo que se configurará acá va a repercutir en todas las páginas*/
+
 html {
   min-height: 100dvh;
   font-size: 16px;
 }
+
 #body {
   /*se usrá grid para el layout de las pages con una columna y tres rows*/
-  font-family: "Josefin Sans", sans-serif;
+  font: 100% "Josefin Sans", sans-serif;
   min-height: 100dvh;
   display: grid;
   grid-template-rows: minmax(60px, auto) 1fr minmax(50px, auto);
@@ -21,10 +29,7 @@ html {
 
 #header {
   grid-area: header;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   padding: 0.25rem;
   background-color: #f7fbfc;
   width: 100%;
@@ -47,7 +52,7 @@ p {
   align-content: center;
   padding: 0.25rem;
 }
-.header__navbar__btn-selected {
+#header__navbar .header__navbar__btn-selected {
   background-color: #769fcd;
   color: white;
   border: none;
@@ -57,26 +62,24 @@ p {
   text-align: justify;
   margin-bottom: 0.5rem;
 }
-.header__navbar__btn-selected:hover {
+#header__navbar .header__navbar__btn-selected:hover {
   background-color: #005fa3;
 }
-.header__navbar__btn {
+#header__navbar .header__navbar__btn {
   color: steelblue;
   border: none;
   padding: 0.2rem 0.2rem;
   border-radius: 0.5rem;
   text-decoration: none;
 }
-.header__navbar__btn:hover {
+#header__navbar .header__navbar__btn:hover {
   color: white;
   background-color: #005fa3;
 }
 
 .main {
   grid-area: main;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: stretch;
   padding: 0.5rem;
   gap: 0.5rem;
 }
@@ -92,36 +95,33 @@ p {
     padding: 0.5em 0.5rem;
   }
 }
-
 span {
   font-weight: bold;
 }
 
 footer {
   grid-area: footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
   background-color: #769fcd;
 }
-.footer__social-network {
+footer .footer__social-network {
   color: white;
   text-decoration: none;
   font-size: 32px;
 }
 
-/*Esta configuración complementaria para la página inicio y para todas los contenedores con textos en todas las páginas*/
 #main__box-img-home {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #main__box-img-home__imagen-lp {
   width: 10rem;
   height: 10rem;
   border-radius: 6rem;
 }
+
 .main__box-texts {
   display: flex;
   justify-content: center;
@@ -131,7 +131,6 @@ footer {
   text-align: center;
 }
 
-/*configuración complementaria página sobre mí*/
 #main__box-texts__sobre-mi {
   max-width: 700px;
   height: 100%;
@@ -139,18 +138,22 @@ footer {
   padding: 5px;
   align-content: center;
 }
+
 #main__box-texts__toggle-mas {
   display: none; /* Ocultar checkbox */
 }
+
 .main__box-texts__extra-content {
   display: none; /* Ocultar contenido extra por defecto */
   margin-top: 5px;
 }
+
 #main__box-texts__toggle-mas:checked + .main__box-texts__extra-content {
   display: flex;
   flex-direction: column; /* Mostrar contenido cuando el checkbox esté marcado */
   gap: 5px;
 }
+
 .read-more-button {
   /* Estilo general del botón */
   display: inline-block;
@@ -164,61 +167,63 @@ footer {
   font-weight: bold;
   text-align: center;
 }
+
 .read-more-button::after {
   /* Texto por defecto (cuando no está marcado) */
   content: "Leer más";
 }
-#main__box-texts__toggle-mas:checked
-  + .main__box-texts__extra-content
-  + .read-more-button::after {
+
+#main__box-texts__toggle-mas:checked + .main__box-texts__extra-content + .read-more-button::after {
   content: "Leer menos"; /* Texto cuando el checkbox está marcado */
 }
+
 .read-more-button:hover {
   /* Cambiar color al pasar el mouse */
   background-color: #005fa3;
 }
 
-/*Esta es la configuración complementaria para la sección skills*/
-#skills {
+#skills__box-skills__progress, #skills__box-skills, #skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#skills {
   align-items: center;
   text-align: center;
   gap: 2rem;
   width: 100%;
 }
+
 #skills__box-skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 4rem;
   align-items: center;
   width: 100%;
 }
+
 #h2-skills {
   font-size: 1.5em;
   font-weight: bold;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   box-shadow: none;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(100, 100, 100, 0.4);
   border-radius: 50%;
   padding: 1rem;
 }
+
 #skills__box-skills__progress {
-  display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   width: 100%;
   max-width: 700px;
 }
 
-/*Configuración complementaria página proyectos*/
 #main__box-texts__proyects {
   display: flex;
   flex-direction: column;
@@ -227,10 +232,12 @@ footer {
   gap: 1rem;
 }
 
-/*Configuración complementaria página contacto*/
-#main__big-box {
+#main__big-box__form, #main__big-box {
   display: flex;
   flex-direction: column;
+}
+
+#main__big-box {
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -240,13 +247,7 @@ footer {
 #main__big-box h2 {
   text-align: center;
 }
-#main__big-box__form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 input,
 textarea,
 button {
@@ -256,11 +257,19 @@ button {
   margin-bottom: 1rem;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-.main__big-box__btn-form {
+
+#main__big-box__form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+#main__big-box__form .main__big-box__btn-form {
   background-color: #769fcd;
   color: white;
   border: none;
 }
-.main__big-box__btn-form:hover {
+#main__big-box__form .main__big-box__btn-form:hover {
   background-color: #005fa3;
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,45 @@
+#main__box-texts__sobre-mi {
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  align-content: center;
+}
+#main__box-texts__toggle-mas {
+  display: none; /* Ocultar checkbox */
+}
+.main__box-texts__extra-content {
+  display: none; /* Ocultar contenido extra por defecto */
+  margin-top: 5px;
+}
+#main__box-texts__toggle-mas:checked + .main__box-texts__extra-content {
+  display: flex;
+  flex-direction: column; /* Mostrar contenido cuando el checkbox esté marcado */
+  gap: 5px;
+}
+.read-more-button {
+  /* Estilo general del botón */
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #769fcd;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+.read-more-button::after {
+  /* Texto por defecto (cuando no está marcado) */
+  content: "Leer más";
+}
+#main__box-texts__toggle-mas:checked
+  + .main__box-texts__extra-content
+  + .read-more-button::after {
+  content: "Leer menos"; /* Texto cuando el checkbox está marcado */
+}
+.read-more-button:hover {
+  /* Cambiar color al pasar el mouse */
+  background-color: #005fa3;
+}

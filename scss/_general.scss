@@ -1,0 +1,121 @@
+$font-stack: "Josefin Sans", sans-serif;
+$primary-color: #769fcd;
+$secondary-color: steelblue;
+$header-color: #f7fbfc;
+$hover-color: #005fa3;
+%flex-config {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100dvh;
+  font-size: 16px;
+}
+#body {
+  /*se usrá grid para el layout de las pages con una columna y tres rows*/
+  font: 100% $font-stack;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: minmax(60px, auto) 1fr minmax(50px, auto);
+  grid-template-areas: "header" "main" "footer";
+  line-height: inherit;
+}
+
+#header {
+  grid-area: header;
+  @extend %flex-config;
+  justify-content: space-around;
+  padding: 0.25rem;
+  background-color: $header-color;
+  width: 100%;
+}
+
+#h1 {
+  padding: 0.25rem;
+  margin-bottom: inherit;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: inherit;
+  color: inherit;
+}
+
+p {
+  font-size: 1rem;
+}
+
+#header__navbar {
+  align-content: center;
+  padding: 0.25rem;
+
+  .header__navbar__btn-selected {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  .header__navbar__btn {
+    color: steelblue;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      background-color: $hover-color;
+    }
+  }
+}
+
+.main {
+  grid-area: main;
+  @extend %flex-config;
+  align-items: stretch;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .main {
+    align-items: center;
+  }
+  .header__navbar__btn-selected {
+    padding: 0.5rem 0.5rem;
+  }
+  .header__navbar__btn {
+    padding: 0.5em 0.5rem;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+footer {
+  grid-area: footer;
+  @extend %flex-config;
+  gap: 2rem;
+  background-color: $primary-color;
+
+  .footer__social-network {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+  }
+}
