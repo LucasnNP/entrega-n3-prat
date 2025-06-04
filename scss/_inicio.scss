@@ -1,7 +1,8 @@
 #main__box-img-home {
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 50%;
+  align-items: end;
 }
 
 #main__box-img-home__imagen-lp {
@@ -16,5 +17,6 @@
   align-items: start;
   min-width: 300px;
   max-width: 700px;
+  min-height: 50%;
   text-align: center;
 }
