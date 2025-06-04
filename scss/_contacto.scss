@@ -1,3 +1,5 @@
+$font-stack: "Josefin Sans", sans-serif;
+
 %display-config {
   display: flex;
   flex-direction: column;
@@ -36,6 +38,7 @@ button {
     background-color: #769fcd;
     color: white;
     border: none;
+    font-family: $font-stack;
     &:hover {
       background-color: #005fa3;
     }
