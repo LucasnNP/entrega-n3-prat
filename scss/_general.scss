@@ -97,14 +97,10 @@ p {
 .main {
   grid-area: main;
   @extend %flex-config;
-  @include flex-alignment(center, stretch);
+  @include flex-alignment(center, center);
   padding: 0.5rem;
   gap: 0.5rem;
   height: 100%;
-
-  @media (min-width: 600px) {
-    align-items: center;
-  }
 }
 
 @media (min-width: 600px) {
